@@ -1,0 +1,56 @@
+.Expenses{
+    flex: 1;
+    text-align: left;
+    margin: 0 1rem;
+}
+
+.Expenses .item{
+    border-top: 1px solid grey;
+    display: flex;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.Expenses .item > .left{
+    flex: 1;
+    text-align: left;
+}
+
+.Expenses .item > .right{
+    flex: 1;
+    text-align: right;
+    display: flex;
+}
+
+.Expenses .item .right:hover .delete{
+    margin-left: 1rem;
+    font-size: inherit;
+    visibility: visible;
+    transition: margin-left 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.Expenses .item .right .delete{
+    visibility: hidden;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.Expenses .header,  .Expenses .item .right{
+    color: var(--expense-color);
+}
+
+.Expenses .item .right .number{
+    display: flex;
+    flex-grow: 1;
+}
+
+.Expenses .item .right .number .amount{
+    flex: 2;
+    text-align: center;
+}
+
+.Expenses .item .right .number .percentage{
+    flex: 1;
+    text-align: right;
+}

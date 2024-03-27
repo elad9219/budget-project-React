@@ -1,0 +1,46 @@
+.Input{
+    background-color: #f7f7f7;
+    padding: 1.5rem 0;
+    display: flex;
+}
+
+.Input button{
+    background-color: transparent;
+    font-size: 2rem;
+    border: none;
+}
+
+.Input input{
+    outline: none;
+    border-radius: 5px;
+}
+
+.Input input[type='text']{
+    width: 20rem;
+}
+
+.Input form{
+    height: 2.5rem;
+    display: flex;
+    margin: auto;
+}
+
+.Input form > * {
+    margin: 0 0.5rem;
+}
+
+.button-income{
+    color: var(--income-color);
+}
+
+.button-expense{
+    color: var(--expense-color);
+}
+
+.selected-income{
+    border: 1px solid var(--income-color);
+}
+
+.selected-expense{
+    border: 1px solid var(--expense-color);
+}
